@@ -11,6 +11,7 @@ overflow-y: hidden;
 
 }
 .header{
+  
     background-color: black;
     display: flex;
     flex-direction: row;
@@ -21,21 +22,30 @@ overflow-y: hidden;
     display: grid;
     grid-template-columns: 0.7fr 0.6fr 0.3fr 0.3fr 0.5fr;
     position: fixed;
+    backdrop-filter: blur(30px);
 
 }
+
 .part{
     font-family: "Poppins", sans-serif;
     color: aliceblue;
     text-decoration:none;
-    margin: 30px;
-    padding-top: 10px;
+    padding-right: 40px;
     font-size: 30px;
+   
 }
+
+
 a:hover{
     color:#35e1e6;
     cursor: pointer;
-    filter: drop-shadow(12px 12px 20px lightskyblue);
+    text-shadow :0px 0px 10px lightskyblue,
+                 0px 0px 20px lightskyblue,
+                 0px 0px 40px lightskyblue,
+                 0px 0px 80px lightskyblue;
+                
 }
+
 
 .main{
     display: grid;
@@ -45,12 +55,39 @@ a:hover{
 .sidebar1{
     background-color: black;
 }
-img{
+.img1{
     padding-top: 100px;
     height: 600px;
 }
 .sidebar2{
     background-color: black;
+}
+.contanier00{
+  display: inline-block;
+  margin: 20%;
+
+}
+.text{
+  font-family: "Abril Fatface", serif;
+  position: relative;
+  top: 190px;
+  right: 120px;
+  overflow: hidden;
+  font-size: 40px;
+  color: white;
+  font-weight: 700;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  cursor: default;
+animation: typing 10s steps(50,end) infinite;
+}
+@keyframes typing{
+  from{
+    width: 0;
+  }
+  to{
+    width: 130%;
+  }
 }
 .h1{
     font-family: "Abril Fatface", serif;
@@ -59,6 +96,7 @@ img{
   font-size: 30px;
   right: 340px;
   top: 430px;
+  cursor: default;
 }
 .h2{
     font-family: "Yeseva One", serif;
@@ -67,6 +105,7 @@ img{
     font-size: 20px;
     right: 230px;
     top: 520px;
+    cursor: default;
 }
 
 .container2{
@@ -75,7 +114,7 @@ img{
     height: 100vh;
   
 }
-.header{
+.header2{
     background-color: black;
 }
 .main2{
@@ -103,11 +142,14 @@ img{
     font-family: "Poppins", sans-serif;
     color: aliceblue;
     padding: 5px;
+    cursor: default;
+    
   
 }
 .p1{
     padding-top:240px;
      font-size: 42px;
+    
  }
  .p2{
      font-size: 41px;
@@ -150,8 +192,15 @@ ul {
     font-size: 40px;
     padding-left: 40px;
     font-family: "Poppins", sans-serif;
+    cursor: default;
     
    }
+   li::marker{
+    content: '💻 ';
+    font-size: 1.2em;
+    
+   }
+  
    .li1{
      
        padding-top: 260px;
@@ -171,7 +220,7 @@ ul {
 
    .container4{
     display: grid;
-    grid-template-rows: 10vh 90vh;
+    grid-template-rows: 10vh 80vh 10vh;
     height: 100vh;
    }
    .header4{
@@ -181,43 +230,90 @@ ul {
    .main4{
     display: grid;
     grid-template-columns: 30% 70%;
-    height: 90vh;
+    height: 100vh;
    }
    .sidebar7{
     background-color: black;
    }
-   .img4{
-    height: 320px;
-    padding-top:290px;
-    padding-left: 130px;
-   }
+  .fa-solid.fa-phone{
+    font-size: 150px;
+    padding-top: 350px;
+    padding-left: 150px;
+  }
    .sidebar8{
     background-color: black;
    } 
-  
-   .p6{
-    font-family: "Poppins", sans-serif;
-    color: aliceblue;
-   padding-top: 300px;
-    font-size: 40px;
-    padding-left: 50px;
+   .ki{
+    padding-top: 300px;
+    padding-left: 110px;
+   
+    /* height: 20vh; */
+   }
+   .ki1{
+    padding-top: 20px;
+    padding-left: 200px;
 
    }
-   .p7{
-    font-family: "Poppins", sans-serif;
-    color: white;
-    padding-top: 40px;
+   .ki2{
+    padding-top: 20px;
+    padding-left: 100px;
+   }
+   i{
     font-size: 40px;
-    padding-left: 140px;
-    
+    color: white;
+    font-family:"Poppins", sans-serif ;
    }
-   .p8{
+
+   /* .p6{
     font-family: "Poppins", sans-serif;
-     color: aliceblue;
-     padding-top: 35px;
-     font-size: 40px;
-     padding-left: 45px;
-   }
+    color: aliceblue;
+    padding-top: 300px;
+    font-size: 40px;
+    padding-left: 10px;
+
+   } */
+
+   .search{
+    display: inline-flex;
+    align-items: center;
+    background-image:linear-gradient(40deg, #111, blue
+    );
+    color:#fff ;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #fff;
+
+}
+.search :is(input,button){
+background: transparent;
+color: inherit;
+border: none;
+outline: none;
+}
+.search__button{
+    display: grid;
+    place-items: center;
+    width: 140px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.fa-brands.fa-facebook{
+    font-size: 20px;
+}
+.fa-solid.fa-envelope{
+    font-size: 20px;
+}
+.fa-brands.fa-instagram{
+    font-size: 20px;
+}
+
+::placeholder{
+    font: inherit;
+    color: #e3e3e3;
+}
+  
+   
    .footer4{
     background-color:black;
    }
@@ -226,26 +322,116 @@ ul {
  .container5{
    display: grid;
    grid-template-rows: 10vh 90vh;
+  height:100vh;
+
  }
  .header5{
-    background-color: black;
- }
+ background-color: black;
+ } 
  .main5{
-    display: grid;
-    gap:10px;
+ background-color: black;
  }
- .card{
-    display: flex;
-    flex-direction: row;
+*/.box {
+    width: 800px;  
+    margin: 10% auto;
+    position: relative;
+  border-radius: 150px;
+  }
+  
+  #card-container {
+    
+    padding-top: 15em;
+    padding-left: 30px;
+    position: relative;
+    margin: 30px;
     width: 200px;
-    height: 300px;
-    box-shadow: 0px 5px 10px 0px lightskyblue
-    0px 5px 10px 0px lightskyblue 0px 5px 10px 0px lightskyblue;
-    float: right;
- }
- .card:hover{
-    transform: rotate(120deg);
- }
+    height: 200px;
+    z-index: 1;
+    float: left;
+    cursor: pointer;
+  
+    
+  }
+  
+  .img5{
+ 
+    width: 200px;
+    height: 190px;
+    
+  }
+  
+  #card, #card2, #card3,#card4,#card5 {
+    width: 100%;
+    height: 100%;
+    margin: 10%;
+    transform-style: preserve-3d;
+    transition: all .8s linear;
+    box-shadow: 5px 5px 15px rgba(0,0,0, .3);
+    cursor: pointer;
+  }
+  
+  #card {
+    &:hover {
+      transform: rotateY(180deg);
+      box-shadow: -5px 5px 15px rgba(0,0,0, .3);
+    }
+  }
+  
+  #card2 {
+    &:hover {
+      transform: rotateY(-180deg);
+      box-shadow: -5px 5px 15px rgba(0,0,0, .3);
+    }
+  }
+  
+  #card3 {
+    &:hover {
+      transform: rotatey(180deg);
+      box-shadow: 5px -5px 15px rgba(0,0,0, .3);
+    }
+   
+  }
+  #card4{
+    &:hover{
+      transform:rotateY(180deg);
+      box-shadow: -5px 5px 15px rgba(0,0,0, .3);
+    }
+  }
+  #card5{
+  &:hover{
+    transform: rotateY(180deg);
+    box-shadow: -5px 5px 15px rgba(0,0,0, .3);
+  }
+  }
+  .smile:hover{
+      scale: 1.2;
+      cursor: pointer;
+  }
+  .face {
+    border-radius: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: chartreuse;
+  }
+  .back {
+    display: block;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    opacity: .7;
+    border-radius: 20px;
+   
+    background: chartreuse;
+  
+  }
+ 
+  
+
+  
+ 
 
 
 
