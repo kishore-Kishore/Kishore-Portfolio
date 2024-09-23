@@ -331,7 +331,7 @@ outline: none;
  .main5{
  background-color: black;
  }
-*/.box {
+.box {
     width: 800px;  
     margin: 10% auto;
     position: relative;
