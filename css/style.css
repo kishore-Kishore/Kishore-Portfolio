@@ -79,7 +79,7 @@ a:hover{
   border-right: 0.15em solid orange;
   white-space: nowrap;
   cursor: default;
-animation: typing 10s steps(10,end) infinite;
+animation: typing 10s steps(50,end) infinite;
 }
 @keyframes typing{
   from{
@@ -331,7 +331,7 @@ outline: none;
  .main5{
  background-color: black;
  }
- */.box {
+ */ .box {
     width: 800px;  
     margin: 10% auto;
     position: relative;
