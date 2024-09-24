@@ -242,6 +242,7 @@ ul {
   }
    .sidebar8{
     background-color: black;
+    
    } 
    .ki{
     padding-top: 300px;
@@ -439,7 +440,7 @@ outline: none;
 
   .rating label {
     display: inline-block;
-    width: 50px;
+    width: 80px;
     height: 60px;
     font-size: 24px;
     text-align: center;
