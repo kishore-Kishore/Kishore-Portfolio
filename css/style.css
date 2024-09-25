@@ -76,7 +76,7 @@ a:hover{
   font-size: 40px;
   color: white;
   font-weight: 700;
-  border-right: 0.15em solid orange;
+  border-right: 0.15em solid black;
   white-space: nowrap;
   cursor: default;
 animation: typing 5s steps(20,end) infinite;
@@ -86,7 +86,7 @@ animation: typing 5s steps(20,end) infinite;
     width: 0;
   }
   to{
-    width: 110%;
+    width: 130%
   }
 }
 .h1{
@@ -143,6 +143,7 @@ animation: typing 5s steps(20,end) infinite;
     color: aliceblue;
     padding: 2px;
     cursor: default;
+    padding-top: 5px;
     
   
 }
@@ -163,6 +164,7 @@ animation: typing 5s steps(20,end) infinite;
  .footer2{
     background-color:white;
  }
+
  .container3{
     display: grid;
     grid-template-rows:10vh 90vh ;  
@@ -189,7 +191,7 @@ animation: typing 5s steps(20,end) infinite;
 }
 ul {
     color: white;
-    font-size: 40px;
+    font-size: 26px;
     padding-left: 40px;
     font-family: "Poppins", sans-serif;
     cursor: default;
@@ -202,15 +204,17 @@ ul {
    }
   
    .li1{
-     
-       padding-top: 260px;
+     font-size: 40px;
+       padding-top: 280px;
      
    }
    .li2{
+    font-size: 40px;
        padding-top: 30px;
    
    }
    .li3{
+    font-size: 40px;
        padding-top: 30px;
       
    }
@@ -218,112 +222,28 @@ ul {
     background-color: black;
    }
 
-   .container4{
+
+   .container5{
     display: grid;
     grid-template-rows: 10vh 80vh 10vh;
     height: 100vh;
    }
-   .header4{
-    background-color: black;
-    height: 8vh;
-   }
-   .main4{
-    display: grid;
-    grid-template-columns: 30% 70%;
-    height: 100vh;
-   }
-   .sidebar7{
-    background-color: black;
-   }
-  .fa-solid.fa-phone{
-    font-size: 150px;
-    padding-top: 350px;
-    padding-left: 150px;
-  }
-   .sidebar8{
-    background-color: black;
-    
-   } 
-   .ki{
-    padding-top: 300px;
-    padding-left: 110px;
-   
-    /* height: 20vh; */
-   }
-   .ki1{
-    padding-top: 20px;
-    padding-left: 200px;
-
-   }
-   .ki2{
-    padding-top: 20px;
-    padding-left: 100px;
-   }
-   i{
-    font-size: 40px;
-    color: white;
-    font-family:"Poppins", sans-serif ;
-   }
-
- 
-
-   .search{
-    display: inline-flex;
-    align-items: center;
-    background-image:linear-gradient(40deg, #111, blue
-    );
-    color:#fff ;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #fff;
-
-}
-.search :is(input,button){
-background: transparent;
-color: inherit;
-border: none;
-outline: none;
-}
-.search__button{
-    display: grid;
-    place-items: center;
-    width: 140px;
-    height: 30px;
-    cursor: pointer;
-    transition: 0.25s;
-}
-.fa-brands.fa-facebook{
-    font-size: 20px;
-}
-.fa-solid.fa-envelope{
-    font-size: 20px;
-}
-.fa-brands.fa-instagram{
-    font-size: 20px;
-}
-
-::placeholder{
-    font: inherit;
-    color: #e3e3e3;
-}
-  
-   
-   .footer4{
-    background-color:black;
-   }
-
-
- .container5{
+ .container4{
    display: grid;
    grid-template-rows: 10vh 90vh;
   height:100vh;
 
  }
- .header5{
+ .header4{
  background-color: black;
  } 
- .main5{
+ .main4{
  background-color: black;
+ display: grid;
+ grid-template-rows:60vh 30vh;
+ }
+.sidebar7{
+padding-right: 490px;
  }
 */.box {
     width: 800px;  
@@ -333,10 +253,22 @@ outline: none;
   }
   
   #card-container {
-    
-    padding-top: 15em;
-    padding-left: 30px;
+
+    padding-left: 20px;
     position: relative;
+    margin: 30px;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    float: left;
+    cursor: pointer;
+  
+    
+  }
+  #card-container1{
+    padding-top: 160px;
+    padding-left: 80px;
+
     margin: 30px;
     width: 200px;
     height: 200px;
@@ -354,7 +286,7 @@ outline: none;
     
   }
   
-  #card, #card2, #card3,#card4,#card5 {
+  #card, #card2, #card3,#card4,#card5{
     width: 100%;
     height: 100%;
     margin: 10%;
@@ -363,6 +295,17 @@ outline: none;
     box-shadow: 5px 5px 15px rgba(0,0,0, .3);
     cursor: pointer;
   }
+  .hi{
+    width: 200px;
+    height: 190px;
+  }
+  .box,#card4,#card5{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+ 
   
   #card {
     &:hover {
@@ -457,6 +400,64 @@ outline: none;
     color: #f90; 
   }
  
+  .container6{
+    display: grid;
+    grid-template-rows: 10vh 90vh;
+    background-color: black;
+    
+  }
+  .header6{
+     background-color: black;
+
+  }
+
+  .contactme{
+    background-color:grey;
+    height:60vh;
+    width:40%;
+    margin-top: 10%;
+    margin-left: 30%;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+     padding-top: 50px;
+     line-height: 50px;
+     
+  }
+  form .name{
+    padding-top: 100px;
+    color: white;
+  }
+  #name{
+    width:290px;
+    height:40px;
+    border-radius: 25px;
+
+  }
+  #mail{
+    width:290px;
+    height:40px;
+    border-radius: 25px;
+
+  }
+  #message
+
+ .coontactme input, .contactme textarea{
+ width: 80%;
+ height: 20%;
+ border-radius: 20px;
+ background-color:lightblue;
+ 
+ }
+ .search{
+  background-color:#00ffc0 ;
+  height: 35px;
+  width: 65px;
+
+
+ }
+ 
+
   
 
   
