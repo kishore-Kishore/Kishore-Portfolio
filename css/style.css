@@ -141,26 +141,18 @@ animation: typing 5s steps(20,end) infinite;
 .p{
     font-family: "Poppins", sans-serif;
     color: aliceblue;
-    padding: 2px;
+    padding-right: 5px;
     cursor: default;
     padding-top: 5px;
     
   
 }
 .p1{
-    padding-top:240px;
-     font-size: 42px;
+    padding-top:260px;
+     font-size: 30px;
     
  }
- .p2{
-     font-size: 41px;
- }
- .p3{
-     font-size: 42px;
- }
- .p4{
-     font-size: 43px;
- }
+ 
  .footer2{
     background-color:white;
  }
@@ -240,53 +232,38 @@ ul {
  .main4{
  background-color: black;
  display: grid;
- grid-template-rows:60vh 30vh;
+ grid-template-rows:90vh 10vh;
  }
-.sidebar7{
-padding-right: 490px;
- }
+
 */.box {
     width: 800px;  
-    margin: 10% auto;
+    margin: 10%;
     position: relative;
   border-radius: 150px;
   }
   
   #card-container {
-
-    padding-left: 20px;
+padding-top: 150px;
+    padding-left:40px;
     position: relative;
     margin: 30px;
-    width: 200px;
-    height: 200px;
+    width: 40vh;
+    height: 40vh;
     z-index: 1;
     float: left;
     cursor: pointer;
-  
-    
+text-align: center;    
   }
-  #card-container1{
-    padding-top: 160px;
-    padding-left: 80px;
-
-    margin: 30px;
-    width: 200px;
-    height: 200px;
-    z-index: 1;
-    float: left;
-    cursor: pointer;
-  
-    
-  }
+ 
   
   .img5{
  
-    width: 200px;
-    height: 190px;
+    width: 300px;
+    height: 290px;
     
   }
   
-  #card, #card2, #card3,#card4,#card5{
+  #card, #card2, #card3{
     width: 100%;
     height: 100%;
     margin: 10%;
@@ -295,16 +272,7 @@ padding-right: 490px;
     box-shadow: 5px 5px 15px rgba(0,0,0, .3);
     cursor: pointer;
   }
-  .hi{
-    width: 200px;
-    height: 190px;
-  }
-  .box,#card4,#card5{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
+ 
  
   
   #card {
@@ -328,18 +296,7 @@ padding-right: 490px;
     }
    
   }
-  #card4{
-    &:hover{
-      transform:rotateY(180deg);
-      box-shadow: -5px 5px 15px rgba(0,0,0, .3);
-    }
-  }
-  #card5{
-  &:hover{
-    transform: rotateY(180deg);
-    box-shadow: -5px 5px 15px rgba(0,0,0, .3);
-  }
-  }
+
   .smile:hover{
       scale: 1.2;
       cursor: pointer;
@@ -366,39 +323,7 @@ padding-right: 490px;
   .k{
     color: black;
   }
-  .rating {
-    font-size: 0; 
-    direction: rtl; 
-  display: flex;
-  justify-content: center;
-  padding-right: 2.5rem;
-  padding-top: 130px;
-  }
-  
-  
-  .rating input {
-    display: none;
-  }
-  
 
-  .rating label {
-    display: inline-block;
-    width: 80px;
-    height: 60px;
-    font-size: 24px;
-    text-align: center;
-   
-    cursor: pointer;
-    color: #ccc;
-    transform: rotateY(180deg); 
-  }
-  
-
-  .rating label:hover,
-  .rating label:hover ~ label,
-  .rating input:checked ~ label {
-    color: #f90; 
-  }
  
   .container6{
     display: grid;
@@ -413,7 +338,7 @@ padding-right: 490px;
 
   .contactme{
     background-color:grey;
-    height:60vh;
+    height:50vh;
     width:40%;
     margin-top: 10%;
     margin-left: 30%;
@@ -424,9 +349,14 @@ padding-right: 490px;
      line-height: 50px;
      
   }
+  .contactme:hover{
+    background-color: rgba(128, 255, 0, 0.824);
+  }
   form .name{
     padding-top: 100px;
-    color: white;
+    color:black;
+
+    font-weight: 600;
   }
   #name{
     width:290px;
@@ -440,21 +370,44 @@ padding-right: 490px;
     border-radius: 25px;
 
   }
-  #message
+  #mail:hover{
+    background-color: white;
+  }
+  #message:hover{
+    background-color: rgb(235, 239, 245);
+  }
 
  .coontactme input, .contactme textarea{
  width: 80%;
  height: 20%;
- border-radius: 20px;
+ border-radius: 10px;
  background-color:lightblue;
  
  }
+ .mail{
+  background-color:#ededed ;
+ }
  .search{
-  background-color:#00ffc0 ;
-  height: 35px;
-  width: 65px;
+  background-color:#ededed;
+  height: 45px;
+  width: 75px;
+  border-radius: 30%;
+ }
 
-
+ .search:hover{
+  transform: scale(0.9);
+  background-color: green;
+  box-shadow: 5px 5px 5px;
+ }
+ .class{
+  display: flex;
+  justify-content: center;
+  color:black;
+  font-size: 40px;
+  font-weight: 400;
+  text-decoration: none;
+  font-family:"Poppins", sans-serif ;
+  padding-top: 20px;
  }
  
 
