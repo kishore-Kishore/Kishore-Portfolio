@@ -231,8 +231,7 @@ ul {
  } 
  .main4{
  background-color: black;
- display: grid;
- grid-template-rows:90vh 10vh;
+ 
  }
 
 */.box {
