@@ -79,7 +79,7 @@ a:hover{
   border-right: 0.15em solid black;
   white-space: nowrap;
   cursor: default;
-animation: typing 5s steps(20,end) infinite;
+animation: typing 2s steps(20,end) infinite;
 }
 @keyframes typing{
   from{
@@ -214,12 +214,6 @@ ul {
     background-color: black;
    }
 
-
-   .container5{
-    display: grid;
-    grid-template-rows: 10vh 80vh 10vh;
-    height: 100vh;
-   }
  .container4{
    display: grid;
    grid-template-rows: 10vh 90vh;
@@ -231,7 +225,8 @@ ul {
  } 
  .main4{
  background-color: black;
- 
+ display: grid;
+ grid-template-columns:100%;
  }
 
 */.box {
@@ -339,13 +334,13 @@ text-align: center;
   }
   
 
-  .container6{
+  .container5{
     display: grid;
     grid-template-rows: 10vh 90vh;
     background-color: black;
     
   }
-  .header6{
+  .header5{
      background-color: black;
 
   }
