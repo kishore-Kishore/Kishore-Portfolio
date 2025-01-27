@@ -20,9 +20,10 @@ overflow-y: hidden;
 }
 .nav-bar{
     display: grid;
-    grid-template-columns: 0.7fr 0.6fr 0.3fr 0.3fr 0.5fr;
+    grid-template-columns: 0.7fr 0.7fr 0.5fr 1fr 0.7fr 0.6fr ;
     position: fixed;
     backdrop-filter: blur(30px);
+    padding-top: 10px;
 
 }
 
@@ -30,7 +31,7 @@ overflow-y: hidden;
     font-family: "Poppins", sans-serif;
     color: aliceblue;
     text-decoration:none;
-    padding-right: 40px;
+    padding-right: 15px;
     font-size: 30px;
    
 }
@@ -164,55 +165,67 @@ animation: typing 2s steps(20,end) infinite;
 .header3{
    background-color: black;
 }
-.main3{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    height: 90vh;
+#skills{
+  height: 100;
+  background-color: black;
+  color: white;
+}
+.skills {
+  margin: auto;
+}
+#skills {
+  padding: 150px;
+  text-align: center;
+}
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 400px;
+}
+.skill-container {
+  width: 300px;
+  margin: 20px;
 
 }
-.sidebar5{
-    background-color: black;
-
+.skill {
+  margin: 60px 0;
 }
-.img3{
-    padding-top: 80px;
-    height: 450px;
+.skill-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
-.sidebar6{
-    background-color: black;
+.skill-bar {
+  background: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 20px;
+  position: relative;
 }
-ul {
-    color: white;
-    font-size: 26px;
-    padding-left: 40px;
-    font-family: "Poppins", sans-serif;
-    cursor: default;
-    
-   }
-   li::marker{
-    content: '💻 ';
-    font-size: 1.2em;
-    
-   }
-  
-   .li1{
-     font-size: 40px;
-       padding-top: 280px;
-     
-   }
-   .li2{
-    font-size: 40px;
-       padding-top: 30px;
-   
-   }
-   .li3{
-    font-size: 40px;
-       padding-top: 30px;
-      
-   }
-   .footer3{
-    background-color: black;
-   }
+.skill-level {
+  height: 100%;
+  background-color:deeppink;
+  transition: width 0.5s ease;
+}
+/* Individual skill levels */
+.html { width: 65%; }
+.css { width: 55%; }
+.js { width: 55%; }
+.python { width: 30%; }
+.problem-solving { width: 45%; }
+.mysql { width: 55%; }
+.skill-level::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
 
  .container4{
    display: grid;
@@ -223,127 +236,106 @@ ul {
  .header4{
  background-color: black;
  } 
- .main4{
+.main4{
+  background-color: black;
+}
+ .engskill{
+  padding-top: 30px;
+  background-color: black;
+}
+.eng{
+  padding-top: 100px;
+  font-size: xx-large;
+  text-align: center;
+  color: white;
+}
+.change{
+  font-size: 23px;
+  text-align: center ;
+}
+.fle{
+  display: flex;
+  justify-content: space-evenly;
+}
+.star-rating {
+  display: flex;
+  font-size: 2em;
+  color: gold;
+}
+
+
+.container5{
+  display: grid;
+  grid-template-rows: 10vh 90vh;
+ height:100vh;
+
+}
+.header5{
+background-color: black;
+} 
+.main5{
  background-color: black;
+ color: white;
  display: grid;
- grid-template-columns:100%;
- }
+ grid-template-rows: 80vh 10vh;
+}
 
-*/.box {
-    width: 800px;  
-    margin: 10%;
-    position: relative;
-  border-radius: 150px;
+  #lifeskills{
+    padding-top: 15rem;
   }
-  
-  #card-container {
-padding-top: 150px;
-    padding-left:40px;
-    position: relative;
-    margin: 30px;
-    width: 40vh;
-    height: 40vh;
-    z-index: 1;
-    float: left;
-    cursor: pointer;
-text-align: center;    
+  #star1{
+    margin-left: 110px;
   }
- 
-  
-  .img5{
- 
-    width: 300px;
-    height: 290px;
-    
+  #star2{
+    margin-left: 110px;
   }
-  
-  #card, #card2, #card3{
-    width: 100%;
-    height: 100%;
-    margin: 10%;
-    transform-style: preserve-3d;
-    transition: all .8s linear;
-    box-shadow: 5px 5px 15px rgba(0,0,0, .3);
-    cursor: pointer;
+  #star3{
+    margin-left: 38pc;
   }
- 
- 
-  
-  #card {
-    &:hover {
-      transform: rotateY(180deg);
-      box-shadow: -5px 5px 15px rgba(0,0,0, .3);
-    }
-  }
-  
-  #card2 {
-    &:hover {
-      transform: rotateY(-180deg);
-      box-shadow: -5px 5px 15px rgba(0,0,0, .3);
-    }
-  }
-  
-  #card3 {
-    &:hover {
-      transform: rotatey(180deg);
-      box-shadow: 5px -5px 15px rgba(0,0,0, .3);
-    }
-   
-  }
-
-  .smile:hover{
-      scale: 1.2;
-      cursor: pointer;
-  }
-  .face {
-    border-radius: 20px;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    background: chartreuse;
-  }
-  .back {
-    display: block;
-    transform: rotateY(180deg);
-    box-sizing: border-box;
-    padding: 10px;
+  .abapt{
+    display: flex;
+    justify-content:space-around;
     text-align: center;
-    opacity:0.6;
-    border-radius: 20px;
-    
-    background: chartreuse;
   }
-  .k{
-    font-size: 40px;
-    padding-top: 100px;
-    color: black;
+  .social_skill{
+    margin-top: 100px;
+    text-align: center;
   }
-  .lite{
-    padding-top:40px;
-    font-size: 30px;
-    text-decoration: none;
-    font-style:italic;
+  .abl{
+    font-size: xx-large;
   }
-  .lite:hover{
-    color:black;
-    text-shadow :0px 0px 10px black,
-    0px 0px 20px black,
-    0px 0px 40px black,
-    0px 0px 80px black;
+  .smsa{
+    font-size: xx-large;
   }
-  
-
-  .container5{
+  .ss{
+    font-size: xx-large;
+  }
+  .star-rating1{
+    display: flex;
+    font-size: 4em;
+    color: gold; /* Star color */
+  }
+  .star-rating2{
+    display: flex;
+    font-size: 4em;
+    color: gold; /* Star color */
+  }
+  .star-rating3{
+    display: flex;
+    font-size: 4em;
+    color: gold; /* Star color */
+  }
+  .container6{
     display: grid;
     grid-template-rows: 10vh 90vh;
     background-color: black;
     
   }
-  .header5{
+  .header6{
      background-color: black;
 
   }
+
 
   .contactme{
     background-color:grey;
