@@ -213,12 +213,12 @@ background-color: black;
   transition: width 0.5s ease;
 }
 /* Individual skill levels */
-.html { width: 65%; }
-.css { width: 55%; }
-.js { width: 55%; }
-.python { width: 30%; }
+.html { width: 60%; }
+.css { width: 40%; }
+.js { width: 40%; }
+.python { width: 80%; }
 .problem-solving { width: 45%; }
-.mysql { width: 55%; }
+.mysql { width: 60%; }
 .skill-level::after {
   content: '';
   position: absolute;
