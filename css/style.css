@@ -363,7 +363,7 @@ background-color: black;
     position: absolute;
     font-size: 38px;
     left: 18em;
-    top: 108.9em;
+    top: 108em;
   }
   
   form .name {
@@ -376,6 +376,9 @@ background-color: black;
     width: 80%; /* Adjusted to make it responsive */
     height: 40px;
     border-radius: 25px;
+  }
+  #name:hover{
+    background-color: white;
   }
   
   #mail:hover {
