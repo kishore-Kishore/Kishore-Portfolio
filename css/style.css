@@ -12,7 +12,7 @@ overflow-y: hidden;
 }
 .header{
   
-    background-color: black;
+    background-color:black;
     display: flex;
     flex-direction: row;
     justify-content:end;
@@ -20,7 +20,7 @@ overflow-y: hidden;
 }
 .nav-bar{
     display: grid;
-    grid-template-columns: 0.6fr 0.6fr 0.4fr 1fr 0.7fr 0.6fr ;
+    grid-template-columns: 0.8fr 0.8fr 0.5fr 1.4fr 1fr 0.6fr ;
     position: fixed;
     backdrop-filter: blur(30px);
     padding-top: 10px;
@@ -29,7 +29,7 @@ overflow-y: hidden;
 
 .part{
     font-family: "Poppins", sans-serif;
-    color: aliceblue;
+    color: white;
     text-decoration:none;
     padding-right: 15px;
     font-size: 30px;
@@ -40,10 +40,10 @@ overflow-y: hidden;
 a:hover{
     color:#35e1e6;
     cursor: pointer;
-    text-shadow :0px 0px 10px lightskyblue,
-                 0px 0px 20px lightskyblue,
-                 0px 0px 40px lightskyblue,
-                 0px 0px 80px lightskyblue;
+    text-shadow :0px 0px 10px #35e1e6,
+                 0px 0px 20px #35e1e6,
+                 0px 0px 40px #35e1e6,
+                 0px 0px 80px #35e1e6;
                 
 }
 
@@ -54,7 +54,7 @@ a:hover{
     height: 100vh;
 }
 .sidebar1{
-    background-color: black;
+    background-color:black;
 }
 .img1{
     padding-top: 100px;
@@ -92,7 +92,7 @@ animation: typing 2s steps(20,end) infinite;
 }
 .h1{
     font-family: "Abril Fatface", serif;
-    color: aliceblue;
+    color:white;
   position: absolute;
   font-size: 30px;
   right: 340px;
@@ -101,7 +101,7 @@ animation: typing 2s steps(20,end) infinite;
 }
 .h2{
     font-family: "Yeseva One", serif;
-    color: aliceblue;
+    color: white;
     position: absolute;
     font-size: 20px;
     right: 230px;
