@@ -20,7 +20,7 @@ overflow-y: hidden;
 }
 .nav-bar{
     display: grid;
-    grid-template-columns: 0.8fr 0.8fr 0.5fr 1.4fr 1fr 0.6fr ;
+    grid-template-columns: 0.8fr 0.8fr 0.6fr 1.4fr 1fr 0.6fr ;
     position: fixed;
     backdrop-filter: blur(30px);
     padding-top: 10px;
@@ -121,7 +121,7 @@ animation: typing 2s steps(20,end) infinite;
     background-color:black;
 }
 .img2{
-   padding-top: 80px;
+   padding-top: 60px;
     height: 400px;
     width: 390px;
     margin-top: 20%;
@@ -141,7 +141,7 @@ animation: typing 2s steps(20,end) infinite;
      
 }
 .p1{
-    padding-top:370px;
+    padding-top:340px;
      font-size: 30px;
     
  }
@@ -361,9 +361,9 @@ background-color: black;
   .thiru{
     color: white;
     position: absolute;
-    font-size: 38px;
-    left: 18em;
-    top: 108em;
+    font-size: 42px;
+    left: 16em;
+    top: 96em;
   }
   
   form .name {
