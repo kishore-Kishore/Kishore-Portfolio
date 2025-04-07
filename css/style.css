@@ -175,6 +175,17 @@ a {
   padding-top: 23em;
   color: white;
 }
+.about-img{
+  position: absolute;
+
+  height: 410px;
+  width: 320px;
+  top:980px;
+  left: 58rem;
+  border-radius: 30%;
+  
+
+}
 
 
   #skills{
